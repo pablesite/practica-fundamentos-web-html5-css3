@@ -4,3 +4,11 @@
     grid-gap: 10px;
     grid-auto-rows: minmax(10px, auto);
 }
+
+.header_video{
+
+    position: fixed;
+    width: 100%;
+    z-index: -100;
+
+}

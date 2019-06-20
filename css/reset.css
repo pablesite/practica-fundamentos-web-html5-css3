@@ -8,9 +8,3 @@ body {
     padding: 0;
 }
 
-/* Este es un pequeño reset */
-input[type="checkbox"]:not(old) + label::-moz-selection,
-input[type="checkbox"]:not(old) + label::selection {
-    color: inherit;
-    background-color: transparent;
-}
