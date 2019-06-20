@@ -1,0 +1,66 @@
+.header {
+    height: 100vh;
+
+    background-image: url(../img/IMG_0022.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+    font-size: 40px;
+}
+
+
+.header > h1 {
+    font-weight: 100;
+    margin-left: 55vw;
+
+}
+
+.header > h1 >  span {
+    display: block;
+    font-weight: 700;
+    font-family: juego-tronos;
+    
+}
+
+.header > .tagline{
+margin-left: 55vw;
+}
+
+
+/* GRID RACES */
+.grid-races{
+    display:flex;
+    flex-grow: 1;
+
+    justify-content: space-evenly;
+
+
+}
+
+.grid-element{
+
+    clear: both;
+    flex:0 1 15%;
+    border:solid red;
+
+
+}
+
+
+
+.thumb > img {
+    /*height: 225px;
+    width: 376px;*/
+
+    /*width: 80%;
+    height: 80%;*/
+
+    max-width: 100%;
+
+}
