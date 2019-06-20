@@ -22,7 +22,7 @@
 .form-title{
     display: flex;
     background-color: #222222;
-    padding: 1rem;
+    /*padding: 1rem;*/
     justify-content: space-evenly;
     align-items: center;
     border-top-left-radius:  1em;
@@ -30,11 +30,24 @@
     opacity: 0.85;
 }
 
-.form-title-logo{
-    font-family:  "Gotham Light";
-    color: white;
-}
 
+.form-title-logo{
+
+    /*align-self: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex: 150px;
+    margin-left: 1rem;*/
+    width: 150px;
+    height: 150px;
+
+    /* font-variant: small-caps; */
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+}
 
 .form-title h1 {
     margin: 0;

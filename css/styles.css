@@ -45,16 +45,20 @@ main {
 
 }
 
+
 .menu-item > a {
     text-decoration: none;
     color: #222222;
     padding: 1rem;
     display: block;
+    transition: all .3s ease-in;
+    border-radius: 10px;
 }
 
 .menu-item > a:hover {
     color: azure;
-    background-color: #222222;
+    background-color: #333;
+
 }
 
 .logo {
