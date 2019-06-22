@@ -1,3 +1,4 @@
+
 .header {
     height: 65vh;
 
@@ -16,7 +17,7 @@
 
 
 
-.header > h1 {
+.header > h1, .header > .tagline {
     font-weight: normal;
     margin-left: 65vw;
     background-color: rgba(25,25,25,0.5);
@@ -33,17 +34,52 @@
     
 }
 
-.header > .tagline{
-margin-left: 55vw;
+
+/*SECTIONS*/
+.main_flex{
+    display: flex;
+    flex-direction: column;
+    /*height: 4000px;*/
+
+}
+.section_element{
+    padding: 1.5rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*height: 300px;*/
+}
+
+#new_races{
+    margin-top: -5.5rem;
+
+}
+
+
+.section_element >a {
+   /* padding: 1.5rem;*/
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+
+
 }
 
 
 /* GRID RACES */
-.grid-races{
-    display:flex;
-    flex-grow: 1;
 
-    justify-content: space-evenly;
+.section_title{
+    flex:1 0 20%;
+    line-height: 5vh;
+}
+
+.grid-races{
+    flex:1 0 80%;
+
+    display:flex;
+    justify-content: space-between;
 
 
 }
@@ -68,4 +104,10 @@ margin-left: 55vw;
 
     max-width: 100%;
 
+}
+
+
+/*FOOTER*/
+footer{
+    color: white;
 }

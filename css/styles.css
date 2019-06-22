@@ -15,7 +15,8 @@
 }
 
 body{
-    background-color: aliceblue;
+    background-color: #222;
+    max-width: var(--max-width);
 }
 main {
     max-width: var(--max-width);
