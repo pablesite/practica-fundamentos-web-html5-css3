@@ -5,6 +5,10 @@
     background-image: url(../img/IMG_0022.jpg);
     background-repeat: no-repeat;
     background-position: top center;
+
+    /*background: url(../img/IMG_0022.jpg) no-repeat center center fixed;*/
+
+
     background-size: cover;
 
     display: flex;
@@ -13,6 +17,9 @@
 
     color: white;
     font-size: 26px;
+
+
+
 }
 
 
