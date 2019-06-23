@@ -7,8 +7,6 @@
     background-position: top center;
 
     /*background: url(../img/IMG_0022.jpg) no-repeat center center fixed;*/
-
-
     background-size: cover;
 
     display: flex;
@@ -18,11 +16,7 @@
     color: white;
     font-size: 26px;
 
-
-
 }
-
-
 
 .header > h1, .header > .tagline {
     font-weight: normal;
@@ -46,11 +40,18 @@
 .main_flex{
     display: flex;
     flex-direction: column;
-    /*height: 4000px;*/
+    /*Si quisiera probar a hacer un movimiento horizontal...*/
+    /*max-width: 3000px;
+    width: 3000px;*/
 
 }
+
+
+
+
+
 .section_element{
-    padding: 1.5rem;
+    padding: 1rem;
     color: white;
 
     display: flex;
@@ -71,7 +72,6 @@
     text-decoration: none;
     font-size: larger;
 
-
 }
 
 
@@ -79,7 +79,8 @@
 
 .section_title{
     flex:1 0 20%;
-    line-height: 5vh;
+
+    padding-bottom: 1em;
 }
 
 .grid-races{
@@ -94,13 +95,11 @@
 .grid-element{
 
     clear: both;
-    flex:0 1 15%;
+    flex:0 1 19%;
     border:solid red;
 
 
 }
-
-
 
 .thumb > img {
     /*height: 225px;
@@ -113,6 +112,47 @@
 
 }
 
+.thumb>img:hover{
+    max-width: 130%;
+    position: relative;
+    left:-15%;
+    margin-top:-10%;
+    z-index: 1;
+    border-radius:10px;
+    mso-border-shadow: yes;
+
+}
+.thumb>img:hover > figcaption {
+    font-size: 1.2rem;
+}
+
+
+
+.caption {
+
+    position: relative;
+    top: -4rem;
+    font-size: .9rem;
+    text-align: right;
+    margin-right: .7rem;
+    z-index: 2;
+    /*margin-right: 1rem;*/
+}
+
+.caption>a:hover{
+
+    /*font-size: 1.2rem;*/
+
+}
+
+.caption > a {
+    background-color: rgba(25,25,25,0.5);
+    padding: .5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+
+}
 
 /*FOOTER*/
 footer{
