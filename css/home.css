@@ -101,8 +101,9 @@
 
 }
 .thumb{
-    border: green solid 1px;
+
     max-height: 20vh;
+    /*border: green solid 1px;*/
 }
 
 
@@ -165,7 +166,6 @@
 
 .thumb:hover > figcaption {
     font-family: 'Open Sans';
-
     /* Estas dos propiedades... no van a funcionar cuando sea responsive..."*/
     position: relative;
     top:-7em;
@@ -173,14 +173,9 @@
     opacity: 1;
     background-color: rgba(25,25,25,0.7);
 
-
-
     width: 170%;
     font-size: 1vw;
     padding: 1em;
-
-
-
 
     -webkit-transition: all 1000ms ease-in-out;
     -moz-transition: background-color,opacity 1500ms ease-in-out;
