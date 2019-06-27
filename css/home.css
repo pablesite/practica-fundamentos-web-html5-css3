@@ -53,6 +53,7 @@
 
 .section_element{
     padding: 1rem;
+
     color: white;
 
     display: flex;
@@ -61,7 +62,7 @@
     /*height: 300px;*/
 }
 
-#new_races{
+#competitions{
     margin-top: -3.5rem;
 
 }
@@ -79,16 +80,18 @@
 /* GRID RACES */
 
 .section_title{
-    flex:1 0 20%;
+    flex:1 1 100%;
+    padding-bottom: 0.5em;
 
-    padding-bottom: 1em;
+
 }
 
 .grid-races{
-    flex:1 0 80%;
+    flex:1 1 100%;
 
     display:flex;
     justify-content: space-between;
+
 
 
 }
@@ -101,8 +104,8 @@
 
 }
 .thumb{
-
-    max-height: 20vh;
+/* Igual el max-height hace falta*/
+    max-height: calc(100vw/9.6);
     /*border: green solid 1px;*/
 }
 
@@ -128,6 +131,7 @@
     max-width: 100%;
     width: 100%;
 
+
 }
 
 .thumb:hover > img{
@@ -136,6 +140,8 @@
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+
+
 
     transform:translate(0px) scale(1.7);
     -webkit-transition: all 450ms ease-in-out;
@@ -148,6 +154,21 @@
 .thumb > figcaption {
     /*transition: transfom opacity 1.5s;*/
     opacity: 0;
+    visibility: hidden;
+
+
+
+/*No se si hará falta*/
+    position: relative;
+    top:-7em;
+    left:-5.52em;
+
+    background-color: rgba(25,25,25,0.7);
+    width: 170%;
+    font-size: 1vw;
+    padding: 1em;
+
+
 
 }
 
@@ -165,6 +186,7 @@
 
 
 .thumb:hover > figcaption {
+
     font-family: 'Open Sans';
     /* Estas dos propiedades... no van a funcionar cuando sea responsive..."*/
     position: relative;
@@ -177,8 +199,12 @@
     font-size: 1vw;
     padding: 1em;
 
+
+    visibility: visible;
+
     -webkit-transition: all 1000ms ease-in-out;
     -moz-transition: background-color,opacity 1500ms ease-in-out;
+
     -ms-transition: all 1000ms ease-in-out;
     -o-transition: all 1000ms ease-in-out;
 
