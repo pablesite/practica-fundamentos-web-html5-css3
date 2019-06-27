@@ -230,3 +230,123 @@ p > span {
 footer{
     color: white;
 }
+
+
+
+
+/* SOCIAL*/
+
+.footer {
+    background-color: var(--text-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.footer a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    align-self: center;
+}
+.social {
+    flex: 1;
+     align-self: center;
+}
+
+.social ul {
+    padding-left: 0px;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    /*justify-content: flex-end;*/
+}
+
+
+
+.social-list li {
+    /* margin: 0 1rem; */
+}
+
+.social-list i:before {
+    font-size: 2rem;
+
+
+}
+
+#facebook:before {
+    margin:0;
+
+
+}
+
+
+
+
+.social-list a:hover {
+    text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+    .footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .links-list {
+        padding-left: 0;
+    }
+
+    .social-list {
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
+
+
+/*
+  	Flaticon icon font
+  	Creation date: 16/06/2019 20:38
+  	*/
+
+@font-face {
+    font-family: "Social-Icons";
+    src: url("../fonts/Social.eot");
+    src: url("../fonts/Social.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Social.woff2") format("woff2"),
+    url("../fonts/Social.woff") format("woff"),
+    url("../fonts/Social.ttf") format("truetype"),
+    url("../fonts/Social.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Social-Icons";
+        src: url("../fonts/Social.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="social-"]:before, [class*=" social-"]:before,
+[class^="social-"]:after, [class*=" social-"]:after {
+    font-family: "Social-Icons";
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 20px;
+}
+
+.social-facebook:before { content: "\f100"; }
+.social-twitter:before { content: "\f101"; }
+.social-linkedin:before { content: "\f102"; }
