@@ -1,22 +1,18 @@
 /* Contenido principal para 360px - resolución GalaxyS9 */
 
-/*SECTIONS ELEMENTS*/
+/*GRID HOME*/
 .main_flex{
     display: flex;
     flex-direction: column;
-    /*Si quisiera probar a hacer un movimiento horizontal...*/
-    /*max-width: 3000px;
-    width: 3000px;*/
 
 }
-
 
 .section_element{
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /*height: 300px;*/
+
 }
 
 #new-races{
@@ -26,7 +22,6 @@
 
 
 .section_element >a {
-    /* padding: 1.5rem;*/
     color: white;
     text-decoration: none;
     font-size: larger;
@@ -34,48 +29,33 @@
 }
 
 
-/* GRID RACES */
+/* SECTIONS */
 
 .section_title{
-    flex:1 1 100%;
-    padding-bottom: 0.5em;
-
+   /* flex:1 1 100%;*/
 
 }
 
 .grid-races{
-    flex:1 1 100%;
+    flex: 1 1 100%;
 
     display:flex;
     justify-content: space-between;
-
-
+    flex-wrap: wrap;
 
 }
 
 .grid-element{
     clear: both;
-    flex:0 1 16.3%;
-
+    flex: 1 1 30%;
 
 }
+
 .thumb{
     /* Igual el max-height hace falta*/
-    max-height: calc(100vw/9.6);
-    /*border: green solid 1px;*/
     position:relative;
-}
-
-
-.thumb:hover {
-
-    /* position: relative;
-     left:-25%;
-     top:-15%;*/
-    z-index: 1;
-
-    /*border-radius:10px;
-    mso-border-shadow: yes;*/
+    max-height: calc(var(--max-width)/4);
+    padding-bottom: .2em;
 
 
 }
@@ -86,33 +66,12 @@
     margin-right: auto;
 
     max-width: 100%;
-    width: 100%;
-
 
 }
-
-.thumb:hover > img{
-    /* max-width: 170%;
-     width: 170%;*/
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-
-
-
-    transform:translate(0px) scale(1.7);
-    -webkit-transition: all 450ms ease-in-out;
-    -moz-transition: all 450ms ease-in-out;
-    -ms-transition: all 450ms ease-in-out;
-    -o-transition: all 450ms ease-in-out;
-}
-
 
 .thumb > figcaption {
-    /*transition: transfom opacity 1.5s;*/
-    opacity: 0;
-    visibility: hidden;
-
+    /* necesario para que todo cuadre bien. habrá que quitarlo cuando resuelva lo del figcaption aquí*/
+    display: none;
 
 }
 
@@ -129,30 +88,6 @@
 }
 
 
-.thumb:hover > figcaption {
-
-    font-family: 'Open Sans';
-    position:absolute;
-    top: 40%;
-    left: -35%;
-
-
-    opacity: 1;
-    background-color: rgba(25,25,25,0.7);
-
-    width: 170%;
-    font-size: .7vw;
-    padding: 1em;
-
-
-    visibility: visible;
-
-    -webkit-transition: all 1000ms ease-in-out;
-    -moz-transition: background-color,opacity 1500ms ease-in-out;
-    -ms-transition: all 1000ms ease-in-out;
-    -o-transition: all 1000ms ease-in-out;
-
-}
 
 h3 > span {
     font-weight: normal;
@@ -164,15 +99,84 @@ p > span {
 .thumb p, .thumb h2, .thumb h3{
     margin: 0;
 }
-/*color: rgba(255,255,255,1);
-transform: translate(0px, -20px);*/
+
+
+
 
 /*MEDIA QUERIES*/
 @media all and (min-width: 768px) {
+    .grid-element {
+        flex: 0 1 16.3%;
 
+    }
+
+    .thumb{
+        max-height: calc(var(--max-width)/8.2);
+
+    }
 }
 
 
 @media all and (min-width: 1280px) {
+
+    .grid-element {
+        flex: 0 1 16.3%;
+
+    }
+
+    .thumb{
+        max-height: calc(var(--max-width)/8.6);
+
+    }
+
+    .thumb > figcaption {
+        opacity: 0;
+        visibility: hidden;
+        display: initial;
+
+    }
+
+    .thumb:hover {
+        z-index: 1;
+
+    }
+
+    .thumb:hover > img{
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+
+        transform:translate(0px) scale(1.7);
+        -webkit-transition: all 450ms ease-in-out;
+        -moz-transition: all 450ms ease-in-out;
+        -ms-transition: all 450ms ease-in-out;
+        -o-transition: all 450ms ease-in-out;
+    }
+
+
+    .thumb:hover > figcaption {
+
+        font-family: 'Open Sans';
+        position:absolute;
+        top: 40%;
+        left: -35%;
+
+
+        opacity: 1;
+        background-color: rgba(25,25,25,0.7);
+
+        width: 170%;
+        font-size: .7vw;
+        padding: 1em;
+
+        visibility: visible;
+
+        -webkit-transition: all 1000ms ease-in-out;
+        -moz-transition: background-color,opacity 1500ms ease-in-out;
+        -ms-transition: all 1000ms ease-in-out;
+        -o-transition: all 1000ms ease-in-out;
+
+    }
+
 
 }
