@@ -1,28 +1,200 @@
+/*MAIN DETAILSHEET*/
+
+/* Root y Main hay que cambiarlos con respecto a todas las pantallas */
+:root {
 
 
-.header_video{
+}
 
-    position: fixed;
+body{
+
+}
+
+
+main {
+    --max-width: 1280px;
+    background-color: #222;
+    max-width: var(--max-width);
+
+    position: relative;
+
     width: 100%;
-    z-index: -100;
-
-}
-
-
-.grid-related-races {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(10px, auto);
-}
-
-.thumb > img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 100%;
-    width: 100%;
+
 
 
 }
+
+.title{
+    position: absolute;
+    bottom: 100%;
+    color:white;
+    width: 100%;
+
+
+
+
+}
+
+.title_left {
+    position: absolute;
+    top: 0%;
+
+    width: 15%;
+    height: 100%;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(48, 48, 48, 0.5) 0%, rgba(99, 99, 99, 0.5) 0%, rgba(115, 115, 115, 0.5) 0%, rgba(79, 79, 79, 0.5) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(20, 20, 20, 0.5) 0%, rgba(48, 48, 48, 0.5) 0%, rgba(37, 37, 37, 0.26) 49%, rgba(31, 31, 31, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#1f1f1f', GradientType=1);
+    background-color: blue;
+
+
+    background: rgba(25,25,25,0.5);
+    background: -moz-linear-gradient(right, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(25,25,25,0.5)), color-stop(100%, rgba(25,25,25,0)));
+    background: -webkit-linear-gradient(right, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: -o-linear-gradient(right, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: -ms-linear-gradient(right, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: linear-gradient(to left, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191919', endColorstr='#191919', GradientType=1 );
+
+
+}
+
+.title_center{
+    position: relative;
+
+    width: 70%;
+    height: 100%;
+    left:15%;
+    background-color: rgba(25,25,25,0.5);
+    text-align:center;
+    padding: 0.5em 0;
+
+
+}
+
+.title_right {
+
+    position: absolute;
+    right:0%;
+    top: 0%;
+    width: 15%;
+    height: 100%;
+
+    background-color: blue;
+
+
+    background: rgba(25,25,25,0.5);
+    background: -moz-linear-gradient(left, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(25,25,25,0.5)), color-stop(100%, rgba(25,25,25,0)));
+    background: -webkit-linear-gradient(left, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: -o-linear-gradient(left, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: -ms-linear-gradient(left, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    background: linear-gradient(to right, rgba(25,25,25,0.5) 0%, rgba(25,25,25,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191919', endColorstr='#191919', GradientType=1 );
+
+
+    z-index: 2;
+
+}
+
+/*
+.title::before{
+    display: inline-block;
+    content: "";
+    width:30px;
+    height: 10%;
+    border:1px solid green;
+
+    background: linear-gradient(to right, rgba(87,87,87,1) 0%, rgba(48,48,48,1) 0%, rgba(99,99,99,1) 0%, rgba(115,115,115,1) 0%, rgba(79,79,79,1) 0%, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 0%, rgba(48,48,48,1) 0%, rgba(34,34,34,0.23) 100%);
+
+*/
+
+.title_center > h1{
+    width: 100%;
+    margin:0;
+
+}
+
+
+.main_content{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+
+
+}
+
+figure{
+    margin:0;
+}
+
+figure > figcaption {
+    padding-top: .5em;
+}
+.thumb{
+    flex-basis: 50%;
+}
+
+video{
+
+    width: 100%;
+
+}
+
+.information{
+    flex-basis: 40%;
+}
+
+.information >h1> span{
+    color:#666;
+}
+
+.description{
+    font-size: larger;
+    text-align : justify;
+
+
+}
+
+.description > p >span {
+    color: #666;
+    font-weight: bold;
+
+}
+
+#activar ~ .desplegable {display: none;overflow: hidden;}
+#activar:checked ~ .desplegable {display: block;}
+#activar{
+    display: none;
+
+}
+.inputlabel{
+    cursor: pointer;
+}
+
+
+/*
+.header > h1, .header > .tagline {
+    font-weight: normal;
+    margin-left: 10vw;
+    margin-right: 50vw;
+    background-color: rgba(25,25,25,0.5);
+    padding: .5rem;
+
+    border-radius: 10px;
+
+}
+
+.header > h1 >  span {
+    display: block;
+    font-weight: 700;
+    font-family: juego-tronos;
+
+}
+*/
+
+
