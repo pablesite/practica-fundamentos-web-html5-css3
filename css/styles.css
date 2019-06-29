@@ -1,38 +1,31 @@
 /* Contenido principal para 360px - resolución GalaxyS9 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 
 @font-face {
-    font-family: juego-tronos;
-    src: url(../fonts/gt.ttf)
+    font-family: 'Dosis', sans-serif;
+
 }
 
 
 :root {
-    --max-width: 1280px;
+    --max-width: 360px;
 }
 
 * {
-    font-family: Roboto;
+    font-family: Dosis;
+    font-size: 1em;
 }
 
 body{
     background-color: #222;
     max-width: var(--max-width);
 
-    /*margin-left: calc(50% - 50vw + .6rem);
-    margin-right: calc(50% - 50vw + .6rem);*/
-
     margin-left: calc((100vw - var(--max-width))/2);
     margin-right: calc((100vw - var(--max-width))/2);
 }
 
-@media all and (max-width: 1280px){
-    body{
-        margin-left:0px;
-        margin-right: 0px;
-    }
-}
 
 
 main {
@@ -42,12 +35,22 @@ main {
 
 
 /*MEDIA QUERIES*/
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
+
+    :root {
+        --max-width: 768px;
+    }
 
 }
 
 
-@media all and (max-width: 1280px) {
+
+@media all and (min-width: 1280px) {
+
+    :root {
+        --max-width: 1280px;
+    }
+
 
 }
 

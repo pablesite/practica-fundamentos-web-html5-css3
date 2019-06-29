@@ -75,9 +75,8 @@ position:relative;
 
 
 .thumb:hover > figcaption {
-    font-family: 'Open Sans';
-    font-size: .7vw;
 
+    font-size: .7vw;
     width: 170%;
     padding: 1em;
 
@@ -111,11 +110,11 @@ p > span {
 transform: translate(0px, -20px);*/
 
 /*MEDIA QUERIES*/
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
 
 }
 
 
-@media all and (max-width: 1280px) {
+@media all and (min-width: 1280px) {
 
 }
