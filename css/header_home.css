@@ -1,6 +1,8 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
 /*HEADER HOME*/
 .header {
-    height: 65vh;
+    height: 45vh;
 
     background-image: url(../img/IMG_0022.jpg);
     background-repeat: no-repeat;
@@ -14,16 +16,17 @@
     justify-content: center;
 
     color: white;
-    font-size: 26px;
+    font-size: larger;
 
 }
 
 .header > h1, .header > .tagline {
     font-weight: normal;
-    margin-left: 65vw;
+    margin-left: 5vw;
+    margin-right: 55vw;
     background-color: rgba(25,25,25,0.5);
     padding: .5rem;
-    margin-right: 1rem;
+
     border-radius: 10px;
 
 }
@@ -32,5 +35,16 @@
     display: block;
     font-weight: 700;
     font-family: juego-tronos;
+
+}
+
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 768px) {
+
+}
+
+
+@media all and (max-width: 1280px) {
 
 }

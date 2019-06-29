@@ -1,3 +1,5 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 @font-face {
@@ -7,7 +9,7 @@
 
 
 :root {
-    --max-width: 2560px;
+    --max-width: 1280px;
 }
 
 * {
@@ -20,11 +22,12 @@ body{
 
     /*margin-left: calc(50% - 50vw + .6rem);
     margin-right: calc(50% - 50vw + .6rem);*/
+
     margin-left: calc((100vw - var(--max-width))/2);
     margin-right: calc((100vw - var(--max-width))/2);
 }
 
-@media all and (max-width: 2560px){
+@media all and (max-width: 1280px){
     body{
         margin-left:0px;
         margin-right: 0px;
@@ -37,6 +40,16 @@ main {
     margin: 0 auto;
 }
 
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 768px) {
+
+}
+
+
+@media all and (max-width: 1280px) {
+
+}
 
 
 

@@ -1,28 +1,17 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
 /*MAIN DETAILSHEET*/
-
-/* Root y Main hay que cambiarlos con respecto a todas las pantallas */
-:root {
-
-
-}
-
-body{
-
-}
 
 
 main {
-    --max-width: 1280px;
+
     background-color: #222;
-    max-width: var(--max-width);
 
     position: relative;
 
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
-
 
 
 }
@@ -32,8 +21,6 @@ main {
     bottom: 100%;
     color:white;
     width: 100%;
-
-
 
 
 }
@@ -110,7 +97,7 @@ main {
 .main_content{
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 1.5rem;
 
 
@@ -123,9 +110,11 @@ figure{
 figure > figcaption {
     padding-top: .5em;
 }
-.thumb{
-    flex-basis: 50%;
+
+.thumb_main{
+    flex-basis: 55%;
 }
+
 
 video{
 
@@ -165,7 +154,15 @@ video{
     cursor: pointer;
 }
 
+/*MEDIA QUERIES*/
+@media all and (max-width: 768px) {
 
+}
+
+
+@media all and (max-width: 1280px) {
+
+}
 
 
 

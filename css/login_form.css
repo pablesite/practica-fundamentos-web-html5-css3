@@ -1,4 +1,21 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
 /* LOGIN FORM */
+
+
+:root {
+    --max-width: 1920px;
+}
+
+body{
+
+    max-width: var(--max-width);
+
+    margin-left: calc((100vw - var(--max-width))/2);
+    margin-right: calc((100vw - var(--max-width))/2);
+}
+
+
 
 #form-login-container{
     background-image: url(../img/wallpaper-index.jpg);
@@ -146,4 +163,15 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     background:url(check_radio_sheet.png) -19px top no-repeat;
     border: green solid 1px;
+}
+
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 768px) {
+
+}
+
+
+@media all and (max-width: 1280px) {
+
 }

@@ -1,81 +1,45 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
 /*Related races*/
+
 
 #related-races{
     color: white;
 }
 .related-races-grid{
     display: grid;
-    grid-template-columns: repeat(6,auto);
+    grid-template-columns: repeat(6,1fr);
     grid-column-gap: .5%;
     grid-auto-rows: minmax(.5%, auto);
 
-    max-height: calc(100vw/9.2);
-
+    max-height: calc(100vw/11);
 }
 
-
-
-
-.section_title{
-    flex:1 1 100%;
-    padding-bottom: 0.5em;
-
-
-}
-
-.grid-races{
-    flex:1 1 100%;
-
-    display:flex;
-    justify-content: space-between;
-
-
-
-}
 
 .grid-element{
-    clear: both;
-    flex:0 1 16.3%;
-
 
 }
-.thumb{
-    /* Igual el max-height hace falta*/
-   /* max-height: calc(100vw/9.6);*/
-    /*border: green solid 1px;*/
-}
 
+
+.thumb {
+position:relative;
+
+}
 
 .thumb:hover {
-
-    /* position: relative;
-     left:-25%;
-     top:-15%;*/
     z-index: 1;
-
-    /*border-radius:10px;
-    mso-border-shadow: yes;*/
-
-
 }
 
 .thumb > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
     max-width: 100%;
-    width: 100%;
-
 
 }
 
 .thumb:hover > img{
-    /* max-width: 170%;
-     width: 170%;*/
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    max-width: 100%;
 
 
 
@@ -88,23 +52,14 @@
 
 
 .thumb > figcaption {
-    /*transition: transfom opacity 1.5s;*/
     opacity: 0;
     visibility: hidden;
-
-    /*No se si hará falta*/
-    position: relative;
-    top:-7em;
-    left:-4.72em;
-
-    background-color: rgba(25,25,25,0.7);
-    width: 170%;
-    font-size: 1vw;
-    padding: 1em;
-
+    z-index: 2;
 
 
 }
+
+
 
 .thumb > figcaption a, .thumb > figcaption a:visited{
     text-decoration: none;
@@ -120,29 +75,27 @@
 
 
 .thumb:hover > figcaption {
-
     font-family: 'Open Sans';
-    /* Estas dos propiedades... no van a funcionar cuando sea responsive..."*/
-    position: relative;
-    top:-7em;
-    left:-4.72em;
-    opacity: 1;
-    background-color: rgba(25,25,25,0.7);
+    font-size: .7vw;
 
     width: 170%;
-    font-size: 1vw;
     padding: 1em;
 
+    position:absolute;
+    top: 40%;
+    left: -35%;
 
+    background-color: rgba(25,25,25,0.7);
     visibility: visible;
+    opacity: 1;
 
-    -webkit-transition: all 1000ms ease-in-out;
+    -webkit-transition: background-color,opacity 1500ms ease-in-out;
     -moz-transition: background-color,opacity 1500ms ease-in-out;
-
-    -ms-transition: all 1000ms ease-in-out;
-    -o-transition: all 1000ms ease-in-out;
+    -ms-transition: background-color,opacity 1500ms ease-in-out;
+    -o-transition: background-color,opacity 1500ms ease-in-out;
 
 }
+
 
 h3 > span {
     font-weight: normal;
@@ -156,3 +109,13 @@ p > span {
 }
 /*color: rgba(255,255,255,1);
 transform: translate(0px, -20px);*/
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 768px) {
+
+}
+
+
+@media all and (max-width: 1280px) {
+
+}

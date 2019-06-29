@@ -1,3 +1,5 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
 /*SECTIONS ELEMENTS*/
 .main_flex{
     display: flex;
@@ -10,10 +12,7 @@
 
 
 .section_element{
-    padding: 1rem;
-
     color: white;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -64,6 +63,7 @@
     /* Igual el max-height hace falta*/
     max-height: calc(100vw/9.6);
     /*border: green solid 1px;*/
+    position:relative;
 }
 
 
@@ -113,17 +113,6 @@
     opacity: 0;
     visibility: hidden;
 
-    /*No se si hará falta*/
-    position: relative;
-    top:-7em;
-    left:-5.52em;
-
-    background-color: rgba(25,25,25,0.7);
-    width: 170%;
-    font-size: 1vw;
-    padding: 1em;
-
-
 
 }
 
@@ -143,15 +132,16 @@
 .thumb:hover > figcaption {
 
     font-family: 'Open Sans';
-    /* Estas dos propiedades... no van a funcionar cuando sea responsive..."*/
-    position: relative;
-    top:-7em;
-    left:-5.52em;
+    position:absolute;
+    top: 40%;
+    left: -35%;
+
+
     opacity: 1;
     background-color: rgba(25,25,25,0.7);
 
     width: 170%;
-    font-size: 1vw;
+    font-size: .7vw;
     padding: 1em;
 
 
@@ -159,7 +149,6 @@
 
     -webkit-transition: all 1000ms ease-in-out;
     -moz-transition: background-color,opacity 1500ms ease-in-out;
-
     -ms-transition: all 1000ms ease-in-out;
     -o-transition: all 1000ms ease-in-out;
 
@@ -177,3 +166,13 @@ p > span {
 }
 /*color: rgba(255,255,255,1);
 transform: translate(0px, -20px);*/
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 768px) {
+
+}
+
+
+@media all and (max-width: 1280px) {
+
+}

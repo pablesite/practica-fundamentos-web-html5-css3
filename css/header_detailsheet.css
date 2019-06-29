@@ -1,17 +1,26 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
 /*HEADER HOME*/
 .header {
-    height: 47vh;
 
+    height: 47vh;
     background-image: url(../img/IMG_0461.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    color: white;
-    font-size: 26px;
+
+
+}
+
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 768px) {
+
+}
+
+
+@media all and (max-width: 1280px) {
 
 }
