@@ -7,8 +7,6 @@
     background-image: url(../img/IMG_0022.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-
-    /*background: url(../img/IMG_0022.jpg) no-repeat center center fixed;*/
     background-size: cover;
 
     display: flex;
@@ -16,35 +14,55 @@
     justify-content: center;
 
     color: white;
-    font-size: larger;
 
 }
 
 .header > h1, .header > .tagline {
-    font-weight: normal;
-    margin-left: 5vw;
-    margin-right: 55vw;
+
     background-color: rgba(25,25,25,0.5);
     padding: .5rem;
-
     border-radius: 10px;
+    font-weight: normal;
+
+    font-size: small;
+    margin: 1em 45% 0 5%;
 
 }
 
 .header > h1 >  span {
     display: block;
     font-weight: 700;
-    font-family: Bahnschrift;
+
+    font-size: medium;
 
 }
+
 
 
 /*MEDIA QUERIES*/
 @media all and (min-width: 768px) {
 
+    .header > h1, .header > .tagline {
+        margin: 1em 63% 0 5%;
+        font-size: larger;
+    }
+
+    .header > h1 >  span {
+        font-size: x-large;
+
+    }
 }
 
 
 @media all and (min-width: 1280px) {
 
+    .header > h1, .header > .tagline {
+        margin: 1em 71% 0 5%;
+        font-size: x-large;
+    }
+
+    .header > h1 >  span {
+        font-size: xx-large;
+
+    }
 }
