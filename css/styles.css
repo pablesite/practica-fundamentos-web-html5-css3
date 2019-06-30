@@ -22,8 +22,8 @@ body{
     background-color: #222;
     max-width: var(--max-width);
 
-    margin-left: calc((100vw - var(--max-width))/2);
-    margin-right: calc((100vw - var(--max-width))/2);
+    margin-left: calc((103vw - var(--max-width))/2);
+    margin-right: calc((103vw - var(--max-width))/2);
 }
 
 
@@ -42,7 +42,6 @@ main {
     }
 
 }
-
 
 
 @media all and (min-width: 1280px) {
