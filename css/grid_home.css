@@ -137,10 +137,13 @@
         visibility: hidden;
         display: initial;
 
+
     }
+
 
     .thumb > figcaption > a > article {
         display: initial;
+
     }
 
     .thumb:hover {
@@ -173,7 +176,7 @@
         background-color: rgba(25,25,25,0.7);
 
         width: 170%;
-        font-size: 75%;
+        font-size: 70%;
         padding: 1em;
 
         visibility: visible;

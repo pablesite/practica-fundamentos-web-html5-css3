@@ -42,6 +42,8 @@ body{
 }
 
 
+
+
 .form-title-logo{
 
     width: 85px;
@@ -61,12 +63,25 @@ body{
 
 }
 
+@supports  (-ms-flow-from: thingy){ /* Edge only */
+
+    .form-title {
+        justify-content: space-around;
+        /* you can also add some other adjustments to size, margins etc to get the same positioning */
+    }
+    .form-title h1 {
+        margin-right: 5%;
+    }
+}
+
 .form-group{
     text-align: center;
     background-color: rgba(221,221,221,0.85);
-    padding: 1rem;
-    border-bottom-left-radius:  1em;
-    border-bottom-right-radius: 1em ;
+    padding: 1.2em;
+
+    -webkit-border-radius: 0 0 1em 1em;
+    -moz-border-radius: 0 0 1em 1em;
+    border-radius: 0 0 1em 1em;
 
 }
 
@@ -90,7 +105,10 @@ opacity: 0.35;
 
     cursor: pointer;
 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
     border-radius: 4px;
+
     margin: 1rem;
     padding: .5rem;
     font-size: 1rem;
@@ -163,7 +181,10 @@ opacity: 0.35;
     }
 
     .form-button{
-        border-radius: 4px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+
         margin: 1.5rem;
         padding: .75rem;
         font-size: 1.2rem;
@@ -208,7 +229,10 @@ opacity: 0.35;
     }
 
     .form-button{
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
         border-radius: 6px;
+
         margin: 2rem;
         padding: 1rem;
         font-size: 1.5rem;
