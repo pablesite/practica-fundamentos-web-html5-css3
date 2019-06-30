@@ -70,9 +70,21 @@
 }
 
 .thumb > figcaption {
-    /* necesario para que todo cuadre bien. habrá que quitarlo cuando resuelva lo del figcaption aquí*/
-    display: none;
+    background-color: rgba(25,25,25,0.7);
 
+    width: 100%;
+    font-size: 37%;
+
+    position:absolute;
+    top: 55%;
+    padding: 1em;
+
+    visibility: visible;
+
+}
+
+.thumb > figcaption > a > article {
+    display: none;
 }
 
 .thumb > figcaption a, .thumb > figcaption a:visited{
@@ -82,23 +94,13 @@
 }
 
 
-
-.thumb > figcaption h2 {
+.thumb h2 {
+    margin: 0;
     text-align: center;
-}
-
-
-
-h3 > span {
     font-weight: normal;
 }
 
-p > span {
-    font-weight: bold;
-}
-.thumb p, .thumb h2, .thumb h3{
-    margin: 0;
-}
+
 
 
 
@@ -134,6 +136,11 @@ p > span {
         visibility: hidden;
         display: initial;
 
+
+    }
+
+    .thumb > figcaption > a > article {
+        display: initial;
     }
 
     .thumb:hover {
@@ -166,7 +173,7 @@ p > span {
         background-color: rgba(25,25,25,0.7);
 
         width: 170%;
-        font-size: .7vw;
+        font-size: 75%;
         padding: 1em;
 
         visibility: visible;
@@ -177,6 +184,23 @@ p > span {
         -o-transition: all 1000ms ease-in-out;
 
     }
+
+    .thumb p, .thumb h3{
+        margin: 0;
+    }
+
+    .thumb h2{
+        font-weight: bold;
+    }
+
+    h3 > span {
+        font-weight: normal;
+    }
+
+    p > span {
+        font-weight: bold;
+    }
+
 
 
 }
