@@ -3,13 +3,11 @@
 /*HEADER HOME*/
 .header {
 
-    height: 47vh;
+    height: 25vh;
     background-image: url(../img/IMG_0461.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-
-
 
 
 }
@@ -17,10 +15,15 @@
 
 /*MEDIA QUERIES*/
 @media all and (min-width: 768px) {
-
+    .header {
+        height: 30vh;
+    }
 }
 
 
 @media all and (min-width: 1280px) {
 
+    .header {
+        height: 35vh;
+    }
 }
