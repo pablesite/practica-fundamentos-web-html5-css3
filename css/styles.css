@@ -1,6 +1,5 @@
 /* Contenido principal para 360px - resolución GalaxyS9 */
 
-
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 
 @font-face {
@@ -8,10 +7,10 @@
 
 }
 
-
 :root {
     --max-width: 360px;
-    --bg-color: white;
+    --text-color: white;
+    --bg-color: #222222;
 }
 
 * {
@@ -20,7 +19,7 @@
 }
 
 body{
-    background-color: #222;
+    background-color: var(--bg-color);
     max-width: var(--max-width);
 
     margin-left: calc((103vw - var(--max-width))/2);

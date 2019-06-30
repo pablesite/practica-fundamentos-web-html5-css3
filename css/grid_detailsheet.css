@@ -3,7 +3,7 @@
 /*GRID DETAILSHEET*/
 
 #related-races{
-    color: white;
+    color: var(--text-color);
 }
 
 .related-races-grid{
@@ -43,7 +43,7 @@
 
 .thumb > figcaption a, .thumb > figcaption a:visited{
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     text-shadow: 0.05em 0.05em #333
 
 }

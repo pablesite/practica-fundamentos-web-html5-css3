@@ -3,7 +3,7 @@
 /*MAIN DETAILSHEET*/
 
 main {
-    background-color: #222;
+    background-color: var(--bg-color);
 
     width: 100%;
 
@@ -15,7 +15,7 @@ main {
 }
 
 .title{
-    color:white;
+    color:var(--text-color);
 
     width: 100%;
 
@@ -81,7 +81,7 @@ main {
 
 
 .main_content{
-    color: white;
+    color: var(--text-color);
     display: flex;
     justify-content: space-between;
     padding-top: 1.5rem;

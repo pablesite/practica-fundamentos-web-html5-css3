@@ -8,7 +8,7 @@
 }
 
 .section_element{
-    color: white;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -22,7 +22,7 @@
 
 
 .section_element >a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-size: larger;
 
@@ -90,7 +90,7 @@
 
 .thumb > figcaption a, .thumb > figcaption a:visited{
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     text-shadow: 0.05em 0.05em #333
 }
 

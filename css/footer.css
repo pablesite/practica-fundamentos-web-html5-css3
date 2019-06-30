@@ -3,7 +3,7 @@
 /*FOOTER*/
 
 .footer {
-    color: white;
+    color: var(--text-color);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -12,7 +12,7 @@
 }
 
 .footer a {
-    color: var(--bg-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
