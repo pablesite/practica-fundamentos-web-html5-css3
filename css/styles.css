@@ -11,6 +11,7 @@
 
 :root {
     --max-width: 360px;
+    --bg-color: white;
 }
 
 * {
