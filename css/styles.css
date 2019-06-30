@@ -15,11 +15,13 @@
 
 * {
     font-family: Dosis;
+    color: var(--text-color);
 
 }
 
 body{
     background-color: var(--bg-color);
+
     max-width: var(--max-width);
 
     margin-left: calc((103vw - var(--max-width))/2);
@@ -35,6 +37,7 @@ main {
 
 
 /*MEDIA QUERIES*/
+
 @media all and (min-width: 768px) {
 
     :root {

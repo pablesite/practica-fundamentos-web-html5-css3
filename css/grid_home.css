@@ -1,6 +1,7 @@
 /* Contenido principal para 360px - resolución GalaxyS9 */
 
-/*GRID HOME*/
+/*GRID HOME (FLEX)*/
+
 .main_flex{
     display: flex;
     flex-direction: column;
@@ -8,7 +9,6 @@
 }
 
 .section_element{
-    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -19,7 +19,6 @@
     margin-top: -3.5rem;
 
 }
-
 
 .section_element >a {
     color: var(--text-color);
@@ -32,17 +31,17 @@
 /* SECTIONS */
 
 .section_title{
-   /* flex:1 1 100%;*/
     padding-top: .5em;
 
 }
 
 .grid-races{
-    flex: 1 1 100%;
-
     display:flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+
+    flex: 1 1 100%;
+    justify-content: space-between;
+
 
 }
 
@@ -52,73 +51,16 @@
 
 }
 
-.thumb{
-    /* Igual el max-height hace falta*/
-    position:relative;
-
-    padding-bottom: .2em;
-
-
-}
-
-.thumb > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 100%;
-
-}
-
-.thumb > figcaption {
-    background-color: rgba(25,25,25,0.7);
-
-    width: 100%;
-    font-size: 37%;
-
-    position:absolute;
-    top: 55%;
-    padding: 1em;
-
-    visibility: visible;
-
-}
-
-.thumb > figcaption > a > article {
-    display: none;
-}
-
-.thumb > figcaption a, .thumb > figcaption a:visited{
-    text-decoration: none;
-    color: var(--text-color);
-    text-shadow: 0.05em 0.05em #333
-}
-
-
-.thumb h2 {
-    margin: 0;
-    text-align: center;
-    font-weight: normal;
-}
-
-
-
-
-
 
 /*MEDIA QUERIES*/
+
 @media all and (min-width: 768px) {
     .grid-element {
         flex: 0 1 16.3%;
 
     }
 
-    .thumb{
-
-
-    }
 }
-
 
 @media all and (min-width: 1280px) {
 
@@ -126,84 +68,5 @@
         flex: 0 1 16.3%;
 
     }
-
-    .thumb{
-
-
-    }
-
-    .thumb > figcaption {
-        opacity: 0;
-        visibility: hidden;
-        display: initial;
-
-
-    }
-
-
-    .thumb > figcaption > a > article {
-        display: initial;
-
-    }
-
-    .thumb:hover {
-        z-index: 1;
-
-    }
-
-    .thumb:hover > img{
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        border-radius: 6px;
-
-        transform:translate(0px) scale(1.7);
-        -webkit-transition: all 450ms ease-in-out;
-        -moz-transition: all 450ms ease-in-out;
-        -ms-transition: all 450ms ease-in-out;
-        -o-transition: all 450ms ease-in-out;
-    }
-
-
-    .thumb:hover > figcaption {
-
-        font-family: 'Open Sans';
-        position:absolute;
-        top: 40%;
-        left: -35%;
-
-
-        opacity: 1;
-        background-color: rgba(25,25,25,0.7);
-
-        width: 170%;
-        font-size: 70%;
-        padding: 1em;
-
-        visibility: visible;
-
-        -webkit-transition: all 1000ms ease-in-out;
-        -moz-transition: background-color,opacity 1500ms ease-in-out;
-        -ms-transition: all 1000ms ease-in-out;
-        -o-transition: all 1000ms ease-in-out;
-
-    }
-
-    .thumb p, .thumb h3{
-        margin: 0;
-    }
-
-    .thumb h2{
-        font-weight: bold;
-    }
-
-    h3 > span {
-        font-weight: normal;
-    }
-
-    p > span {
-        font-weight: bold;
-    }
-
-
 
 }

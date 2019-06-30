@@ -6,8 +6,8 @@
 }
 
 body{
-
     max-width: var(--max-width);
+
     margin-left: calc((100vw - var(--max-width))/2);
     margin-right: calc((100vw - var(--max-width))/2);
 }
@@ -32,34 +32,34 @@ body{
 }
 
 .form-title{
-    display: flex;
     background-color: var(--bg-color);
+
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    opacity: 0.85;
+
     border-top-left-radius:  1em;
     border-top-right-radius: 1em ;
-    opacity: 0.85;
+
 }
 
-
-
-
 .form-title-logo{
-
-    width: 85px;
-    height: 85px;
-
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 
+    width: 85px;
+    height: 85px;
+
 }
 
 .form-title h1 {
-    margin: 0;
-    color: var(--text-color);
     font-size: small;
+
+    margin: 0;
 
 }
 
@@ -67,16 +67,19 @@ body{
 
     .form-title {
         justify-content: space-around;
-        /* you can also add some other adjustments to size, margins etc to get the same positioning */
     }
     .form-title h1 {
         margin-right: 5%;
     }
 }
 
+
 .form-group{
-    text-align: center;
+
     background-color: rgba(221,221,221,0.85);
+
+    text-align: center;
+
     padding: 1.2em;
 
     -webkit-border-radius: 0 0 1em 1em;
@@ -87,43 +90,52 @@ body{
 
 .form-input{
     font-size: 1rem;
+
+    color: #222222;
+
     padding: 0.75rem;
+
     margin: .5rem 0;
 
 }
 
 .form-input::placeholder{
-opacity: 0.35;
+    opacity: 0.35;
 
 }
 
 .form-button{
     background-color: var(--bg-color);
+
+    font-size: 1rem;
     color: rgba(221,221,221,0.9);
     opacity: 0.95;
+
+    padding: .5rem;
+
     border: 0;
-
-    cursor: pointer;
-
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 
     margin: 1rem;
-    padding: .5rem;
-    font-size: 1rem;
+
+    cursor: pointer;
 }
 
 .form-remember-pass{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    color: #222222;
+
     font-size: .75rem;
 }
 
 .form-remember-pass > a{
-    text-decoration: none;
     flex: 1 1 55%;
+    text-decoration: none;
     text-align: right;
 }
 
@@ -138,6 +150,8 @@ opacity: 0.35;
 .form-remember-pass > label{
     flex: 1 1 30%;
     text-align: left;
+
+    color: #222222;
 }
 
 .form-remember-pass > input{
@@ -146,8 +160,8 @@ opacity: 0.35;
 }
 
 
-
 /*MEDIA QUERIES*/
+
 @media all and (min-width: 768px) {
 
     :root {
@@ -156,6 +170,7 @@ opacity: 0.35;
 
     body{
         max-width: var(--max-width);
+
         margin-left: calc((100vw - var(--max-width))/2);
         margin-right: calc((100vw - var(--max-width))/2);
     }
@@ -170,7 +185,6 @@ opacity: 0.35;
     }
 
     .form-title-logo {
-
         width: 120px;
         height: 120px;
     }
@@ -181,20 +195,22 @@ opacity: 0.35;
     }
 
     .form-button{
+        font-size: 1.2rem;
+
+        padding: .75rem;
+
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
 
         margin: 1.5rem;
-        padding: .75rem;
-        font-size: 1.2rem;
+
     }
 
     .form-remember-pass{
         font-size: 1rem;
     }
 }
-
 
 @media all and (min-width: 1280px) {
 
@@ -203,8 +219,8 @@ opacity: 0.35;
     }
 
     body{
-
         max-width: var(--max-width);
+
         margin-left: calc((100vw - var(--max-width))/2);
         margin-right: calc((100vw - var(--max-width))/2);
     }
@@ -225,17 +241,21 @@ opacity: 0.35;
 
     .form-input{
         font-size: 2rem;
+
         margin: 1rem 0;
     }
 
     .form-button{
+        font-size: 1.5rem;
+
+        padding: 1rem;
+
         -webkit-border-radius: 6px;
         -moz-border-radius: 6px;
         border-radius: 6px;
 
         margin: 2rem;
-        padding: 1rem;
-        font-size: 1.5rem;
+
     }
 
     .form-remember-pass{

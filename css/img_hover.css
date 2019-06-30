@@ -1,0 +1,121 @@
+/* Contenido principal para 360px - resolución GalaxyS9 */
+
+/*IMG_HOVER*/
+
+.thumb {
+    position:relative;
+
+}
+
+.thumb > img {
+    max-width: 100%;
+
+}
+
+.thumb > figcaption {
+    background-color: rgba(25,25,25,0.7);
+
+    position:absolute;
+    top: 55%;
+
+    width: 100%;
+    font-size: 37%;
+    visibility: visible;
+
+    padding: 1em;
+
+}
+
+.thumb > figcaption > a > article{
+    display: none;
+
+}
+
+.thumb > figcaption a, .thumb > figcaption a:visited{
+    text-decoration: none;
+    text-shadow: 0.05em 0.05em #333
+
+}
+
+.thumb h2 {
+    font-weight: normal;
+    text-align: center;
+
+    margin: 0;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 768px) {
+
+}
+
+@media all and (min-width: 1280px) {
+
+    .thumb > figcaption {
+        display: initial;
+
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+    .thumb > figcaption > a > article{
+        display: initial;
+    }
+
+    .thumb:hover {
+        z-index: 1;
+    }
+
+    .thumb:hover > img{
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+
+        transform:translate(0px) scale(1.7);
+        -webkit-transition: all 450ms ease-in-out;
+        -moz-transition: all 450ms ease-in-out;
+        -ms-transition: all 450ms ease-in-out;
+        -o-transition: all 450ms ease-in-out;
+
+    }
+
+    .thumb:hover > figcaption {
+        background-color: rgba(25,25,25,0.7);
+
+        position:absolute;
+        top: 40%;
+        left: -35%;
+
+        width: 170%;
+        font-size: 70%;
+        visibility: visible;
+        opacity: 1;
+
+        padding: 1em;
+
+        -webkit-transition: background-color,opacity 1500ms ease-in-out;
+        -moz-transition: background-color,opacity 1500ms ease-in-out;
+        -ms-transition: background-color,opacity 1500ms ease-in-out;
+        -o-transition: background-color,opacity 1500ms ease-in-out;
+
+    }
+
+    .thumb h2{
+        font-weight: bold;
+    }
+
+    h3 > span {
+        font-weight: normal;
+    }
+
+    p > span {
+        font-weight: bold;
+    }
+    .thumb p,  .thumb h3{
+        margin: 0;
+
+    }
+
+}

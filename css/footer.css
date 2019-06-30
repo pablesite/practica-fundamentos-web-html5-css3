@@ -3,16 +3,15 @@
 /*FOOTER*/
 
 .footer {
-    color: var(--text-color);
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
+
     padding: 1rem 2rem;
 
 }
 
 .footer a {
-    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -32,12 +31,9 @@
 
 .flaticon-list {
     display: flex;
-    list-style: none;
-    /*justify-content: flex-end;*/
-}
 
-.flaticon-list li {
-    /* margin: 0 1rem; */
+    list-style: none;
+
 }
 
 .flaticon-list i:before {
@@ -49,37 +45,3 @@
 #facebook:before {
     margin:0;
 }
-
-
-/*FLATICON SOCIAL */
-
-@font-face {
-    font-family: "Flaticon";
-    src: url("../fonts/Flaticon.eot");
-    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Flaticon.woff2") format("woff2"),
-    url("../fonts/Flaticon.woff") format("woff"),
-    url("../fonts/Flaticon.ttf") format("truetype"),
-    url("../fonts/Flaticon.svg#Flaticon") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: "Flaticon";
-        src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
-    }
-}
-
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-family: Flaticon;
-    font-size: 20px;
-    font-style: normal;
-    margin-left: 20px;
-}
-
-.flaticon-social:before { content: "\f100"; }
-.flaticon-twitter:before { content: "\f101"; }
-.flaticon-linkedin:before { content: "\f102"; }
