@@ -2,32 +2,21 @@
 
 /*GRID DETAILSHEET*/
 
-
 #related-races{
     color: white;
 }
+
 .related-races-grid{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,73px);
     grid-column-gap: .5%;
-    grid-auto-rows: minmax(.5%, auto);
-
-    max-height: calc(100vw/11);
-}
-
-
-.grid-element{
 
 }
-
 
 .thumb {
-position:relative;
+    position:relative;
 
-}
-
-.thumb:hover {
-    z-index: 1;
 }
 
 .thumb > img {
@@ -35,86 +24,136 @@ position:relative;
 
 }
 
-.thumb:hover > img{
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    max-width: 100%;
-
-
-
-    transform:translate(0px) scale(1.7);
-    -webkit-transition: all 450ms ease-in-out;
-    -moz-transition: all 450ms ease-in-out;
-    -ms-transition: all 450ms ease-in-out;
-    -o-transition: all 450ms ease-in-out;
-}
-
-
 .thumb > figcaption {
-    opacity: 0;
-    visibility: hidden;
-    z-index: 2;
+
+    visibility: visible;
+    opacity: 1;
+
+    font-size: 37%;
+    width: 100%;
+    padding: 1em;
+
+    position:absolute;
+    top: 50%;
+
+    background-color: rgba(25,25,25,0.7);
 
 
 }
-
-
 
 .thumb > figcaption a, .thumb > figcaption a:visited{
     text-decoration: none;
     color: white;
     text-shadow: 0.05em 0.05em #333
-}
 
+}
 
 
 .thumb > figcaption h2 {
     text-align: center;
-}
-
-
-.thumb:hover > figcaption {
-
-    font-size: .7vw;
-    width: 170%;
-    padding: 1em;
-
-    position:absolute;
-    top: 40%;
-    left: -35%;
-
-    background-color: rgba(25,25,25,0.7);
-    visibility: visible;
-    opacity: 1;
-
-    -webkit-transition: background-color,opacity 1500ms ease-in-out;
-    -moz-transition: background-color,opacity 1500ms ease-in-out;
-    -ms-transition: background-color,opacity 1500ms ease-in-out;
-    -o-transition: background-color,opacity 1500ms ease-in-out;
 
 }
 
 
-h3 > span {
-    font-weight: normal;
+.thumb > figcaption > a > article{
+    display: none;
+
 }
 
-p > span {
-    font-weight: bold;
-}
-.thumb p, .thumb h2, .thumb h3{
+.thumb h2 {
     margin: 0;
 }
+
+
 
 
 
 /*MEDIA QUERIES*/
 @media all and (min-width: 768px) {
 
+    .related-races-grid{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: none;
+        grid-column-gap: .5%;
+        /*grid-auto-rows: minmax(.5%, auto);
+        max-height: calc(100vw/11);*/
+    }
+
+
 }
 
 
 @media all and (min-width: 1280px) {
+
+    .related-races-grid{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: .5%;
+        /* grid-auto-rows: minmax(.5%, auto);
+         max-height: calc(100vw/11);*/
+    }
+
+    .thumb > figcaption {
+        opacity: 0;
+        visibility: hidden;
+        display: initial;
+    }
+
+
+    .thumb > figcaption > a > article{
+        display: initial;
+    }
+
+    .thumb:hover {
+        z-index: 1;
+    }
+
+    .thumb:hover > img{
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        max-width: 100%;
+
+        transform:translate(0px) scale(1.7);
+        -webkit-transition: all 450ms ease-in-out;
+        -moz-transition: all 450ms ease-in-out;
+        -ms-transition: all 450ms ease-in-out;
+        -o-transition: all 450ms ease-in-out;
+    }
+
+    .thumb:hover > figcaption {
+
+        font-size: 75%;
+        width: 170%;
+        padding: 1em;
+
+        position:absolute;
+        top: 40%;
+        left: -35%;
+
+        background-color: rgba(25,25,25,0.7);
+        visibility: visible;
+        opacity: 1;
+
+        -webkit-transition: background-color,opacity 1500ms ease-in-out;
+        -moz-transition: background-color,opacity 1500ms ease-in-out;
+        -ms-transition: background-color,opacity 1500ms ease-in-out;
+        -o-transition: background-color,opacity 1500ms ease-in-out;
+
+    }
+
+    h3 > span {
+        font-weight: normal;
+    }
+
+    p > span {
+        font-weight: bold;
+    }
+    .thumb p,  .thumb h3{
+        margin: 0;
+
+    }
+
 
 }
